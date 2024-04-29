@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home - Visita Sevilla</title>
+
+    <link
+      rel="icon"
+      href="assets/img/favicon-150x150-rojo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <style>
+      /* ES Klarheit Grotesk */
+      @font-face {
+        font-family: "ES Klarheit Grotesk";
+        font-style: normal;
+        src: url("assets/fonts/ESKlarheitGrotesk-Light.woff2") format("woff2");
+        font-weight: 300;
+      }
+
+      @font-face {
+        font-family: "ES Klarheit Grotesk";
+        font-style: normal;
+        src: url("assets/fonts/ESKlarheitGrotesk-Regular.woff2") format("woff2");
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "ES Klarheit Grotesk";
+        font-style: normal;
+        src: url("assets/fonts/ESKlarheitGrotesk-Extrabold.woff2")
+          format("woff2");
+        font-weight: 800;
+      }
+
+      body {
+        font-family: "ES Klarheit Grotesk", sans-serif;
+      }
+
+      /* Hide video controls. <video /> will have controls due to accessibility reasons. */
+      video::-webkit-media-controls,
+      video::-webkit-media-controls-enclosure,
+      video::-webkit-media-controls-panel,
+      video::-webkit-media-controls-overlay-play-button {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO -->
+    <div
+      class="min-h-screen overflow-hidden"
+      aria-label="Site hero"
+      role="region"
+    >
+      <!-- TOP BAR -->
+      <header
+        class="flex items-center justify-between py-10 px-6 md:px-12 relative top-0 z-50 bg-white w-full"
+      >
+        <h1 class="group">
+          <a
+            href="#main"
+            class="group-hover:cursor-pointer max-w-32 block"
+            aria-label="Site branding"
+            data-text="Sevilla. Passion for You"
+          >
+            <img
+              src="assets/img/Home-Visita-Sevilla-0.svg"
+              alt="Visita Sevilla logo"
+              class="w-full h-full object-cover aspect-[75:31]"
+              data-lazy-src="assets/img/Home-Visita-Sevilla-0.svg"
+              data-ll-status="loaded"
+            />
+          </a>
+        </h1>
+
+        <nav aria-label="Navigation site">
+          <ul
+            class="items-center gap-8 hidden lg:flex lg:items-center lg:gap-8"
+          >
+            <li>
+              <a
+                href="#"
+                class="text-sm hover:underline hover:font-extrabold"
+                data-text="Passion for Summer"
+                >Passion for Summer</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm hover:underline hover:font-extrabold"
+                data-text="Puntos de información turística"
+                >Puntos de información turística</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm hover:underline hover:font-extrabold"
+                data-text="Prepara tu viaje"
+                >Prepara tu viaje</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-sm hover:underline hover:font-extrabold"
+                data-text="Tu estancia"
+                >Tu estancia</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="w-9 h-9 hover:cursor-pointer active:scale-95 lg:hidden pb-2"
+          aria-label="Toggle menu"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <img
+            src="assets/img/bars-3.svg"
+            alt="Toggle menu icon"
+            class="w-full h-full aspect-square object-cover"
+          />
+        </button>
+      </header>
+
+      <!-- VIDEO -->
+      <section
+        class="flex items-center relative overflow-hidden"
+        style="min-height: calc(100vh - 138px - 175px) !important"
+        aria-label="Site demonstration video"
+      >
+        <video
+          class="absolute top-0 left-0 w-full h-full aspect-video object-cover object-left overflow-hidden"
+          autoplay
+          loop
+          muted
+          controls
+        >
+          <source
+            src="assets/video/Sevilla-Video-Header-Web-Visita-Sevilla-V3.mp4"
+            type="video/mp4"
+          />
+
+          <track
+            kind="descriptions"
+            src="assets/video/description.vtt"
+            srclang="es"
+            label="Descripción en español"
+          />
+
+          Tu navegador no soporta el elemento video.
+        </video>
+
+        <h2
+          class="block absolute left-12 text-white text-5xl md:text-7xl font-extrabold max-w-prose text-balance"
+        >
+          Sevilla. <br />
+          Passion for you.
+        </h2>
+      </section>
+
+      <!-- ACTIONS -->
+      <div class="bg-red-600" aria-label="Site actions" role="region">
+        <ul
+          class="flex flex-col md:flex-row gap-7 md:justify-center md:flex-wrap max-w-6xl mx-auto p-6 md:p-12 [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 [&>li>a>img]:w-6 [&>li>a>img]:h-6 [&>li>a>img]:md:w-7 [&>li>a>img]:md:h-7 [&>li>a>img]:object-cover [&>li>a>img]:aspect-square [&>li>a>p]:text-white [&>li>a>p]:text-sm [&>li>a>p]:md:text-lg [&>li>a>p]:max-w-prose [&>li>a>p]:text-balance"
+        >
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-monumentos.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-monumentos.png"
+                data-ll-status="loaded"
+              />
+              <p>Monumentos</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-museos.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-museos.png"
+                data-ll-status="loaded"
+              />
+              <p>Museos</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-agenda.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-agenda.png"
+                data-ll-status="loaded"
+              />
+              <p>Agenda</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-comer-y-salir.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-comer-y-salir.png"
+                data-ll-status="loaded"
+              />
+              <p>Comer y salir</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-cultura.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-cultura.png"
+                data-ll-status="loaded"
+              />
+              <p>Cultura</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-compras.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-compras.png"
+                data-ll-status="loaded"
+              />
+              <p>De compras</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-fiestas-en-sevilla.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-fiestas-en-sevilla.png"
+                data-ll-status="loaded"
+              />
+              <p>Fiestas en Sevilla</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-deporte.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-deporte.png"
+                data-ll-status="loaded"
+              />
+              <p>Deporte</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-ocio.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-ocio.png"
+                data-ll-status="loaded"
+              />
+              <p>Ocio</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-familia.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-familia.png"
+                data-ll-status="loaded"
+              />
+              <p>Familia</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-parques.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-parques.png"
+                data-ll-status="loaded"
+              />
+              <p>Parques</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-artesania.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-artesania.png"
+                data-ll-status="loaded"
+              />
+              <p>Artesanía</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="assets/img/icono-barrios-blanco.png"
+                alt="Action icon"
+                data-lazy-src="assets/img/icono-barrios-blanco.png"
+                data-ll-status="loaded"
+              />
+              <p>Barrios</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BARRIOS BANNER -->
+    <div class="mb-24" aria-label="Site Banner barrios agosto" role="region">
+      <img
+        src="assets/img/sevilla-banner-agosto_Mesa-de-trabajo-1-1-1.jpg"
+        alt="Banner Sevilla barrios agosto image"
+        class="w-full h-full object-cover aspect-[80:33]"
+        data-lazy-src="assets/img/sevilla-banner-agosto_Mesa-de-trabajo-1-1-1.jpg"
+        data-ll-status="loaded"
+      />
+    </div>
+
+    <!-- MAIN -->
+    <main id="main" class="mx-auto px-6 sm:px-12 max-w-6xl">
+      <!-- PREPARA TU VIAJE -->
+      <section class="mb-16">
+        <h3
+          class="font-extrabold text-4xl lg:text-5xl mb-11 max-w-prose text-balance"
+        >
+          Prepara tu viaje
+        </h3>
+
+        <ul
+          class="flex flex-col gap-8 [&>li>a]:flex [&>li>a]:gap-7 [&>li>a]:items-center [&>li>a>img]:w-6 [&>li>a>img]:h-6 [&>li>a>img]:object-cover [&>li>a>img]:aspect-square [&>li>a>p]:text-2xl [&>li>a>p]:max-w-prose [&>li>a>p]:text-balance [&>li>a>p]:transition-colors [&>li>a>p]:duration-300"
+        >
+          <li>
+            <a class="group" href="#">
+              <img
+                src="assets/img/arrow-full.svg"
+                alt="Left arrow icon"
+                data-lazy-src="assets/img/arrow-full.svg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:text-[#ff1741]">Alojamiento</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group" href="#">
+              <img
+                src="assets/img/arrow-full.svg"
+                alt="Left arrow icon"
+                data-lazy-src="assets/img/arrow-full.svg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:text-[#ff1741]">Cómo llegar</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group" href="#">
+              <img
+                src="assets/img/arrow-full.svg"
+                alt="Left arrow icon"
+                data-lazy-src="assets/img/arrow-full.svg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:text-[#ff1741]">
+                Horarios, moneda e idioma
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group" href="#">
+              <img
+                src="assets/img/arrow-full.svg"
+                alt="Left arrow icon"
+                data-lazy-src="assets/img/arrow-full.svg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:text-[#ff1741]">
+                Guías, mapas y monumentos
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- DURANTE TU ESTANCIA -->
+      <section class="mb-16">
+        <h3
+          class="font-extrabold text-4xl lg:text-5xl mb-11 max-w-prose text-balance"
+        >
+          Durante tu estancia
+        </h3>
+
+        <ul
+          class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 [&>li>a]:block [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-300 [&>li>a>img]:w-full [&>li>a>img]:h-full [&>li>a>img]:object-cover [&>li>a>img]:aspect-square [&>li>a>p]:font-extrabold [&>li>a>p]:max-w-prose [&>li>a>p]:text-balance [&>li>a>p]:text-lg [&>li>a>p]:absolute [&>li>a>p]:bottom-0 [&>li>a>p]:w-full [&>li>a>p]:p-3 [&>li>a>p]:bg-[#ffa515] [&>li>a>p]:shadow-inner [&>li>a>p]:rounded-tr-full"
+        >
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/visitas.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/visitas.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">Visitas guiadas</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/Imagen-1.png"
+                alt="Cover image"
+                data-lazy-src="assets/img/Imagen-1.png"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">Puntos de información</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/moverte.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/moverte.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">Moverte por la ciudad</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/estudiar.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/estudiar.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">Estudiar en Sevilla</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- VIVE SEVILLA -->
+      <section class="mb-16">
+        <h3
+          class="font-extrabold text-4xl lg:text-5xl mb-11 max-w-prose text-balance"
+        >
+          Vive Sevilla
+        </h3>
+
+        <ul
+          class="[&>li]:inline [&>li>a]:text-2xl [&>li>a]:md:text-4xl [&>li>a]:max-w-prose [&>li>a]:text-balance [&>li>a]:after:content-['/'] [&>li>a]:after:inline-block [&>li>a]:after:mx-3"
+        >
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >La Sevilla más dulce</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >La Sevilla más desconocida</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >De ruta por los murales y grafitis de Sevilla</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >Noche de copas por el centro</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >El Río y el Arenal y qué mas</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >Una ciudad para el deporte</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >Terrazas y diversión al sol</a
+            >
+          </li>
+
+          <li>
+            <a class="hover:underline hover:italic" href="#"
+              >Sevilla, la ciudad de las letras</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- DÓNDE COMER -->
+      <section class="mb-24">
+        <h3
+          class="font-extrabold text-4xl lg:text-5xl mb-11 max-w-prose text-balance"
+        >
+          Dónde comer
+        </h3>
+
+        <ul
+          class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 [&>li>a]:block [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-300 [&>li>a>img]:w-full [&>li>a>img]:h-full [&>li>a>img]:object-cover [&>li>a>img]:aspect-square [&>li>a>p]:font-extrabold [&>li>a>p]:max-w-prose [&>li>a>p]:text-balance [&>li>a>p]:text-lg [&>li>a>p]:absolute [&>li>a>p]:bottom-0 [&>li>a>p]:w-full [&>li>a>p]:p-3 [&>li>a>p]:bg-[#ffa515] [&>li>a>p]:shadow-inner [&>li>a>p]:rounded-tr-full"
+        >
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/arenal.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/arenal.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">El Arenal</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/tapas.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/tapas.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">El fenómeno de la tapa</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/brunch.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/brunch.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">La hora del brunch</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="group hover:scale-105" href="#">
+              <img
+                src="assets/img/adobo.jpg"
+                alt="Cover image"
+                data-lazy-src="assets/img/adobo.jpg"
+                data-ll-status="loaded"
+              />
+              <p class="group-hover:underline">Adobo y "pescaíto" frito</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- POSTCARD FORM -->
+      <section class="bg-[#0039d7]">
+        <form class="px-6 py-12 md:px-12 max-w-6xl mx-auto">
+          <h4
+            class="text-white text-balance max-w-prose font-extrabold text-3xl leading-snug mb-8"
+          >
+            Envía una postal y participa en el sorteo de una experiencia única
+            en Sevilla
+          </h4>
+
+          <label for="email" class="block cursor-text text-white italic -mb-4"
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="block bg-transparent text-white py-1 text-lg mt-6 border-b border-b-white placeholder-transparent mb-8"
+            autocomplete="off"
+            placeholder="Email"
+            aria-label="Email"
+          />
+
+          <label for="name" class="block cursor-text text-white italic -mb-4"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="block bg-transparent text-white py-1 text-lg mt-6 border-b border-b-white placeholder-transparent mb-8"
+            autocomplete="off"
+            placeholder="Nombre"
+            aria-label="Nombre"
+          />
+
+          <label
+            for="postcard"
+            class="block cursor-text text-white italic -mb-4"
+            >Postal</label
+          >
+          <input
+            type="file"
+            name="postcard"
+            id="postcard"
+            class="block bg-transparent text-white py-1 text-xs sm:text-base mt-6 placeholder-transparent mb-8"
+            aria-label="Postal"
+          />
+
+          <p class="mb-5 text-white text-xs max-w-prose text-balance">
+            Al hacer clic a continuación para enviar este formulario, reconoce
+            que la información que proporcione se procesará de acuerdo con
+            nuestra Política de privacidad.
+          </p>
+
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            class="mr-1"
+            aria-label="He leído y acepto los términos legales"
+          />
+          <label
+            for="terms"
+            class="text-white text-sm cursor-pointer max-w-prose text-balance"
+          >
+            He leído y acepto los términos legales
+          </label>
+
+          <button
+            type="submit"
+            class="rounded-full border-2 text-white py-3 px-20 text-xl block mt-6 hover:scale-105 hover:cursor-pointer active:scale-95 transition-transform duration-300"
+            aria-label="Enviar"
+          >
+            Enviar
+          </button>
+        </form>
+      </section>
+
+      <!-- LINKS AND WCAG CONFORMANCE LOGO -->
+      <div class="bg-[#ffb0ba]" aria-label="Site footer links" role="region">
+        <div
+          class="max-w-6xl mx-auto px-6 py-12 md:px-12"
+          aria-label="Site footer links wrapper"
+          role="region"
+        >
+          <ul
+            class="[&>li]:inline-block [&>li]:mx-3 [&>li]:my-1 [&>li>a]:text-2xl [&>li>a]:max-w-prose [&>li>a]:text-balance text-center mb-4"
+          >
+            <li>
+              <a class="hover:underline" href="#">Contacto</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Perfil del contratante</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Profesionales</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Smart Tourism Office</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Sevilla&me</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Tienda online</a>
+            </li>
+          </ul>
+
+          <ul
+            class="[&>li]:inline-block [&>li>a]:text-xs [&>li>a]:max-w-prose [&>li>a]:text-balance [&>li>a]:after:content-['|'] [&>li>a]:after:inline-block [&>li>a]:after:mx-1 text-center mb-4"
+            aria-label="Site disclaimer"
+          >
+            <li>
+              <a class="hover:underline" href="#">Aviso legal</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Política de cookies</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Política de privacidad</a>
+            </li>
+
+            <li>
+              <a class="hover:underline" href="#">Política de calidad</a>
+            </li>
+
+            <li>
+              <p class="text-xs max-w-prose text-balance cursor-pointer">
+                Congresos y turismo de Sevilla S.A. (Contursa)
+              </p>
+            </li>
+          </ul>
+
+          <div
+            class="flex items-center justify-center"
+            aria-label="WCAG 2 Level AA Conformance Logo wrapper"
+            role="region"
+          >
+            <a
+              href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+              target="_blank"
+              title="Explanation of WCAG 2 Level AA conformance"
+            >
+              <img
+                height="32"
+                width="88"
+                src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
+                alt="Level AA conformance,
+              W3C WAI Web Content Accessibility Guidelines 2.2"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BANNER -->
+      <div
+        class="bg-red-600 border-t border-t-black"
+        aria-label="Site footer banner"
+        role="region"
+      >
+        <div
+          class="flex items-center mx-auto max-w-6xl px-6 [&>a]:py-6"
+          aria-label="Site footer banner wrapper"
+          role="region"
+        >
+          <a
+            href="#"
+            class="hover:cursor-pointer max-w-48 inline-block"
+            aria-label="Site branding"
+            data-text="Sevilla. Passion for You"
+          >
+            <img
+              src="assets/img/Home-Visita-Sevilla-0.svg"
+              alt="Site logo"
+              class="w-full h-full object-cover aspect-[75:31]"
+              data-lazy-src="assets/img/Home-Visita-Sevilla-0.svg"
+              data-ll-status="loaded"
+            />
+          </a>
+
+          <a
+            href="#"
+            class="hover:cursor-pointer max-w-48 inline-block px-12 bg-white [clip-path:_polygon(25%_0%,_100%_0%,_75%_100%,_0_100%)]"
+            aria-label="Site branding 2"
+            data-text="NO8DO"
+          >
+            <img
+              src="assets/img/nodo.svg"
+              alt="Site logo 2"
+              class="w-full h-full object-cover aspect-[22:19]"
+              data-lazy-src="assets/img/nodo.svg"
+              data-ll-status="loaded"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
